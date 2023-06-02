@@ -13,6 +13,6 @@ public class Product extends Menu {
 
     @Override
     public void show(){
-        System.out.printf("%-15s | %s\n", getName(), getDetail(), menuPrice);
+        System.out.printf("%-15s | %s\n", menuName, getDetail(), menuPrice);
     }
 }

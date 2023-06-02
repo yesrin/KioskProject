@@ -13,7 +13,7 @@ public class Menu {
 
 
     public void show(){
-    System.out.printf("%-15s | %s\n", name, detail);
+    System.out.printf("%-15s | %s\n", menuType, detail);
 }
 
 
@@ -21,7 +21,7 @@ public class Menu {
         return detail;
     }
 
-    public String getType() {
+    public String getMenuType() {
         return menuType;
     }
 
