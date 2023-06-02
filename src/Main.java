@@ -1,8 +1,8 @@
 public class Main {
+//    Kiosk kiosk=new Kiosk();
     public static void main(String[] args) {
-//            Kiosk kioskAction=new Kiosk();
-//            kioskAction.ConnectScreen();
-        Screen screen = new Screen();
-        screen.ConnectScreen();
+        Kiosk kiosk=new Kiosk();
+        kiosk.LoadMenu();
+        kiosk.TermenulController();
     }
 }
