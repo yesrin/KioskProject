@@ -8,6 +8,8 @@ class MenuList {
     private Map<String, List<Menu>> menus;
     private Map<String, List<Product>> menuItems;
     private List<Product> cart;
+    private double totalPrice;
+    private int orderNumber;
     MenuList(){
         menus = new HashMap<>();
         menuItems = new HashMap<>();
@@ -63,5 +65,24 @@ class MenuList {
         return menuItems.get(key);
     }
 
-
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+    public void displayCart() {
+        for (Product product : cart) {
+            System.out.println(product.name + "   | " + product.price + " | " + product.description);
+        }
+    }
+    public void addToCart(Product menuItem) {
+        cart.add(menuItem);
+        totalPrice += menuItem.price;
+    }
+    public void resetCart() {
+        cart.clear();
+        totalPrice = 0.0;
+    }
+    public int generateOrderNumber() {
+        orderNumber++;
+        return orderNumber;
+    }
 }

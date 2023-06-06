@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class Menu {
 
-    private String name;
-    private String description;
+    public String name;
+    public String description;
 
     Menu(String name, String description) {
         this.name = name;
